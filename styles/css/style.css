@@ -435,7 +435,7 @@ h3 {
           animation: pulse 2s linear infinite;
 }
 
-#header .row .btn-img button {
+#header .row .btn-img a {
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -502,6 +502,10 @@ h3 {
   bottom: -90%;
   opacity: 0.4;
   z-index: -1;
+}
+
+#about h2 {
+  color: #05e7e6;
 }
 
 #about .first-row {

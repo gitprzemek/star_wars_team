@@ -439,7 +439,7 @@ h3{
             padding-top: 60px;
             width: auto;
             animation: pulse 2s linear infinite;
-            button{
+            a{
                 background-color: transparent;
                 border: none;
                 cursor: pointer;
@@ -512,6 +512,9 @@ h3{
     opacity: 0.4;
     z-index: -1;
 }
+  h2{
+    color: $blue-light;
+  }
   .first-row{
     position: relative;
     top: -50px;
