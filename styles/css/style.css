@@ -430,11 +430,45 @@ h3 {
 
 #header .row .btn-img {
   padding-top: 60px;
+  width: auto;
+  -webkit-animation: pulse 2s linear infinite;
+          animation: pulse 2s linear infinite;
 }
 
 #header .row .btn-img button {
   background-color: transparent;
   border: none;
+  cursor: pointer;
+}
+
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 1.15, 1.15);
+    transform: scale3d(1.15, 1.15, 1.15);
+  }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
 }
 
 #about {
@@ -707,4 +741,162 @@ h3 {
 }
 
 /************ RESPONSIVE *********/
+@media only screen and (max-width: 1140px) {
+  #about {
+    margin-bottom: 80px;
+  }
+  #about > img {
+    width: 55%;
+    bottom: -50%;
+  }
+  #about:after {
+    display: none;
+  }
+  #about .first-row {
+    top: -65px;
+  }
+  #about .first-row div {
+    width: 110px;
+    height: 110px;
+    margin: 25px;
+  }
+}
+
+@media only screen and (max-width: 790px) {
+  #characters .container .row .circle-img {
+    height: 90px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 30%;
+            flex: 0 1 30%;
+    padding: 0 5px 0 10px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  #characters .container .row .img-text {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 70%;
+            flex: 0 1 70%;
+    font-size: 0.8em;
+    padding: 0 5px;
+  }
+  #characters .container .row .img-text p {
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  #header .row h1 {
+    font-size: 50px;
+  }
+  #about {
+    margin-bottom: 80px;
+  }
+  #about > img {
+    width: 55%;
+    bottom: -20%;
+  }
+  #about:after {
+    display: none;
+  }
+  #about .first-row {
+    text-align: center;
+    top: -30px;
+  }
+  #about .first-row div {
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+  }
+  #about .first-row div:first-child {
+    margin-left: auto;
+  }
+  #about .first-row div:last-child {
+    margin-right: auto;
+  }
+  #about .sec-row p {
+    margin: 10px 0 20px 0;
+    line-height: 1.6em;
+    padding: 0 10px !important;
+  }
+  #articles {
+    margin-bottom: 80px;
+  }
+  #articles > img {
+    width: 40%;
+    bottom: -10%;
+  }
+  #articles #articles-slider .item {
+    margin-right: 0;
+  }
+  #statistic {
+    margin-bottom: 80px;
+  }
+  #statistic .container p {
+    margin-bottom: 30px;
+  }
+  #statistic .container .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #statistic .container .row .circle-stat {
+    padding: 5px;
+    width: 170px;
+  }
+  #characters .container {
+    margin-bottom: 80px;
+  }
+  #characters .container > p {
+    margin-bottom: 30px;
+  }
+  #characters .container .row {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin-bottom: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #characters .container .row .circle-img {
+    height: 90px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 20%;
+            flex: 0 1 20%;
+    padding: 0 5px 0 10px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  #characters .container .row .img-text {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 60%;
+            flex: 0 1 60%;
+    font-size: 0.8em;
+    padding: 0 5px;
+  }
+  #characters .container .row .img-text p {
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  #footer > img {
+    width: 70%;
+    right: 0%;
+  }
+  #footer .container .row .btn:first-child,
+  #footer .container .row .btn:last-child {
+    margin: 10px auto;
+  }
+}
 /*# sourceMappingURL=style.css.map */
