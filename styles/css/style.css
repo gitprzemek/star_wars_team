@@ -610,7 +610,7 @@ h3 {
   font-size: 30px;
 }
 
-#articles .container #articles-slider .owl-nav button i {
+#articles .container #articles-slider .owl-nav button img {
   padding: 0 10px 0 10px;
 }
 
@@ -763,6 +763,27 @@ h3 {
     width: 110px;
     height: 110px;
     margin: 25px;
+  }
+  #characters .container .row .circle-img {
+    height: 100px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 30%;
+            flex: 0 1 30%;
+    padding: 0 5px 0 10px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  #characters .container .row .img-text {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 70%;
+            flex: 0 1 70%;
+    font-size: 0.8em;
+    padding: 0 5px;
+  }
+  #characters .container .row .img-text p {
+    margin-top: 10px;
+    margin-bottom: 15px;
   }
 }
 

@@ -611,7 +611,7 @@ h3{
         color: $pink;
         font-size: 30px;
         button{
-          i{
+          img{
             padding: 0 10px 0 10px;
           }
           
@@ -764,7 +764,30 @@ h3{
       }
     }
   }
+  #characters{
+    .container{
+      .row{
+        .circle-img{
+          height: 100px;
+          flex: 0 1 30%;
+          padding: 0 5px 0 10px;
+          align-self: center;
+        }
+        .img-text{
+          flex: 0 1 70%;
+          font-size: 0.8em;
+          padding: 0 5px;
+          p{
+            margin-top: 10px;
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+  }
+
 }
+
 @media only screen and (max-width: 790px) {
 
 

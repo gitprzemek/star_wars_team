@@ -6,7 +6,7 @@ $('#articles-slider').owlCarousel({
     margin: 10,
     smartSpeed: 1000,
     nav: true,
-    navText: ['<i class="fa fa-angle-left"></i>','<i class="fas fa-angle-right"></i>'],
+    navText: ['<img src="styles/img/arrow-left.png" alt="arrow">','<img src="styles/img/arrow-right.png" alt="arrow">'],
     loop: true,
     autoplay: true,
     mouseDrag: true,
